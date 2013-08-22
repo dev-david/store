@@ -6,9 +6,9 @@ gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-0-stable'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
+group :development, :test do
+	gem 'sqlite3'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
